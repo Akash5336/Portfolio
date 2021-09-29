@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Changa:wght@500&family=Concert+One&family=Righteous&family=Domine:wght@500&display=swap');
+/*My CSS Styiling*/
+.navbar .but:hover{
+    border-bottom: 2px white solid;
+}.navbar a{
+    font-family: 'Righteous',cursive;
+    padding: 0;
+    margin: 0;
+}
+.display-2{
+    font-family: 'Italianno',sans-serif;
+}
+#desc{
+    font-family: 'Domine',sans-serif;
+    text-align: justify;
+}
+.myc{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.lang a{
+    color: #000;
+    text-decoration: none;
+}
+.mycard{
+    background-color: #fff95b;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform .35s ease-in;
+}
+.mycard:hover{
+    transform: scale(1.08);
+    color: #000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.myc ul{
+    list-style-type: none;
+}
+.myimg{
+    align-items: center;
+    width: 45px;
+    height: 45px;
+}
+.mytext{
+    font-family: 'Concert One',cursive;
+    padding: 10px;
+}
+.slant{
+    position: relative;
+    height: 400px;
+}
+
+.slant::before,
+.slant::after{
+    content: '';
+    position: absolute;
+    height: 60px;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    background:  #212529;
+    transform: skewY(-2deg);
+    flex-wrap: wrap;
+}
+#header1{
+    padding-top: 70px;
+    text-decoration: solid underline;
+    font-family: 'Changa', sans-serif;
+}
+
+.cb{
+    background-color: #fff95b;
+    border-radius: 15px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.header2{
+    font-family: 'Changa', sans-serif;
+    text-decoration: underline solid;
+    padding-top: 35px;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+#heads{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact .mytext{
+    padding: 0px;
+    font-size: large;
+}
+#projects .card-text{
+    text-align: justify;
+}
+#projects .card{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+#projects .card-body{
+  background-color: #ffedd8;
+}
+#contact .btn{
+    margin-bottom: 20px;
+}
+.footer a{
+    margin: 0 10px;
+}
+.footer .grid{
+    grid-template-columns: 2fr 1fr;
+}
+/*Optimize for mobile view*/
+
+@media(max-width:500px){
+    #heads .slant{
+        width: auto;
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cb{
+        margin-bottom: 20px;
+    }
+    #header1{
+        text-align: center;
+    }
+    .header2{
+        text-align: center;
+    }
+
+    #projects .card{
+        max-height: 550px;
+        height: auto;
+        margin-bottom: 10px;
+        background-color: #ffedd8;
+    }
+    #projects .btn{
+        margin-bottom: 5px;
+        width: 170px;
+    }
+    .grid1{
+        display: grid;
+        gap:10px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 100px;
+    }
+    #contact{
+        margin-top: 100px;
+    }
+}
+
+/*Animations*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #ffd166;
+    border-radius: 50%;
+    border-top: 16px solid #e36414;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+#myDiv{
+    display: none;
+}

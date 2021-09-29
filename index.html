@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio | Akash P</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 1500);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "contents";
+    }
+  </script>
+<div id="myDiv" style="display:none;">    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient" style="background-color: #00b4d8;">
+        <div class="container">
+          <a class="navbar-brand fs-3" href="#">AKASH P</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active but fs-5" href="#skills">Skills</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link active but fs-5" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active but fs-5" href="#contact">Contact</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="mt-5 animate-bottom" style="background-color: lightcyan;">
+        <section id="heads">
+          <div class="grid slant p-5" style="background-color: #212529;">
+              <div class="incs">
+                <img class="mx-auto d-block" width="300px" src="images/profile.jpg" alt="">
+              </div>
+              <div class="incs text-white">
+                <h1 class="display-2">Hi!. I'm Akash P..</h1>
+                <p id="desc">Hello Everyone.. I'm a student at VIT Bhopal. Studying BTech. Computer Science Engineering with Specialisation in Artificial Intelligence and Machine Learning. I am a person who is interested in computers a lot. I do a bit of Competetive Coding. I have explored a lot of domain including CTF's(Cyber Security), Web Design, Android Dev, Robotics. I hope to find my passion soon. Till then I'll  continue to explore. Hope you like my page and do visit my Social Media Handles.</p>
+              </div>
+          </div>
+        </section>
+        <section id="skills" class="container">
+          <h2 id="header1">SKILLS</h2>
+          <div class="lang row mt-5">
+              <div class="col-lg-4">
+                  <div class="mx-auto myc" style="width: 18rem;">
+                    <div class="card-body cb">
+                      <h5 class="card-title text-center fw-bold fs-3 text-decoration-underline mytext">Languages</h5>
+                      <ul class="list-group">
+                        <a href="https://devdocs.io/cpp/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/c++.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">C++</div>
+                        </a>
+                        <a href="https://devdocs.io/c/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/c.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">C</div>
+                        </a>
+                        <a href="https://docs.oracle.com/en/java/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/java.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">Java</div>
+                        </a>
+                        <a href="https://docs.python.org/3/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/python.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">Python</div>
+                        </a>
+                        <a href="https://jquery.com/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/kotlin.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">Kotlin</div>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="mx-auto myc" style="width: 18rem;">
+                    <div class="card-body cb">
+                      <h5 class="card-title text-center fw-bold fs-3 text-decoration-underline mytext">FrontEnd</h5>
+                      <ul class="list-group">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/html.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">HTML</div>
+                        </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/css.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">CSS</div>
+                        </a>
+                        <a href="https://reactjs.org/docs/getting-started.html" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/react.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">ReactJS</div>
+                        </a>
+                        <a href="https://docs.angularjs.org/guide" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/angular.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">AngularJS</div>
+                        </a>
+                        <a href="https://developer.android.com/kotlin" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/jquery.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">jQuery</div>
+                        </a>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="mx-auto myc" style="width: 18rem;" >
+                    <div class="card-body cb">
+                      <h5 class="card-title text-center fw-bold fs-3 text-decoration-underline mytext">BackEnd</h5>
+                      <ul class="list-group">
+                        <a href="https://nodejs.org/en/docs/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/node.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">NodeJS</div>
+                        </a>
+                        <a href="https://flask.palletsprojects.com/en/2.0.x/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/flask.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">Flask</div>
+                        </a>
+                        <a href="https://docs.djangoproject.com/en/3.2/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/django.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">Django</div>
+                        </a>
+                        <a href="https://perldoc.perl.org/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/perl.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">Perl</div>
+                        </a>
+                        <a href="https://docs.mongodb.com/" class="mycard" target="_blank" rel="noopener noreferrer">
+                          <img src="images/mogodb.png" alt="" class="myimg">
+                          <div class="mytext fs-5 fw-bold fst-italic">MongoDB</div>
+                        </a>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+        </div>
+      </section>
+      <section id="projects" class="container mt-4">
+        <h2 class="header2">PROJECTS</h2>
+        <div class="grid1">
+        <div class="card mb-3" style="max-width: 540px; border-radius:10px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/firebase.png" class="img-fluid rounded-start" alt="FireBase Chat App" style="margin-top: 15px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Firebase based Chat App</h5>
+                <span class="badge bg-secondary">JAVA</span>
+                <span class="badge bg-secondary">KOTLIN</span>
+                <span class="badge bg-secondary">XML</span>
+                <p class="card-text">This App is based on the firebase feature provided by Google. It uses the database to work on one-to-one chats.</p>
+                <button type="button" class="btn btn-outline-primary">Read More</button>
+                <button type="button" class="btn btn-outline-primary">Repo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px; border-radius:10px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/voting.png" class="img-fluid rounded-start" alt="Voting System" style="margin-top: 6px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Voting System</h5>
+                <span class="badge bg-secondary">CPP</span>
+                <span class="badge bg-secondary">MYSQL</span>
+                <span class="badge bg-secondary">SDL</span>
+                <p class="card-text">This is a basic gui-based menu driven voting system developed using C++. It stores all the data in MySQL Database.</p>
+                <button type="button" class="btn btn-outline-primary">Read More</button>
+                <button type="button" class="btn btn-outline-primary">Repo</button>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px; border-radius:10px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/facebook.png" class="img-fluid rounded-start" alt="Facebook Clone" style="margin-top: 15px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Facebook Clone</h5>
+                <span class="badge bg-secondary">HTML</span>
+                <span class="badge bg-secondary">CSS</span>
+                <span class="badge bg-secondary">JS</span>
+                <p class="card-text">This a clone of the famous Facebook application. It is designed mainly for students of a particular college or University.</p>
+                <button type="button" class="btn btn-outline-primary">Read More</button>
+                <button type="button" class="btn btn-outline-primary">Repo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px; border-radius:10px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/linkedin.png" class="img-fluid rounded-start" alt="LinkedIn Clone" style="margin-top: 20px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">LinkedIn Clone</h5>
+                <span class="badge bg-secondary">HTML</span>
+                <span class="badge bg-secondary">JS</span>
+                <span class="badge bg-secondary">REACT</span>
+                <p class="card-text">This a clone of the connecting platform LinkedIn. This is just a simple direct clone of the LinkedIn wesite</p>
+                <button type="button" class="btn btn-outline-primary">Read More</button>
+                <button type="button" class="btn btn-outline-primary">Repo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="contact" class="container">
+        <h2 class="header2">CONTACT</h2>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label mytext">Email address:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address" required/>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label mytext">Message:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </section>
+      <section class="footer bg-dark py-2">
+        <div class="container grid">
+          <div>
+            <h4 class="text-white mytext fs-3">AKASH P</h4>
+            <p class="text-white mytext fs-5">Copyright &copy; 2021</p>
+          </div>
+          <div>
+            <a href="https://github.com/Akash5336" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x text-white"></i></a>
+            <a href="https://www.discord.com/users/772099308672778240" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord fa-2x text-white"></i></a>
+            <a href="https://www.linkedin.com/in/akash-p-552676177/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x text-white"></i></a>
+            <a href="https://www.instagram.com/_the_cyber.king_007_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x text-white"></i></a>
+          </div>
+        </div>
+      </section>
+      </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </div>
+  </body>
+</html>
