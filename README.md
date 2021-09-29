@@ -1,6 +1,6 @@
 Potfolio
-Digital Portfolio
-This is created using HTML5 and CSS3 along with Bootstrap and FontAwesome
+Digital Portfolio \n
+This is created using HTML5 and CSS3 along with Bootstrap and FontAwesome \n
 
 This site is optimised for both mobile and desktop environments.
 This is best viewed in Google Chrome 94.0.4606.61 or higher.
