@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Changa:wght@500&family=Concert+One&family=Righteous&family=Domine:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Italianno&family=Changa:wght@500&family=Concert+One&family=Righteous&family=Domine:wght@500&display=swap');
 /*My CSS Styiling*/
 .navbar .but:hover{
     border-bottom: 2px white solid;
@@ -89,6 +89,7 @@
     font-family: 'Changa', sans-serif;
     text-decoration: underline solid;
     padding-top: 35px;
+    margin-bottom: 40px;
 }
 
 .grid1{
@@ -111,6 +112,7 @@
 #projects .card{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    font-family: 'Acme', sans-serif;
 }
 #projects .card-body{
   background-color: #ffedd8;
@@ -118,14 +120,24 @@
 #contact .btn{
     margin-bottom: 20px;
 }
+#projects .btn{
+  margin-right: 5px;
+}
 .footer a{
     margin: 0 10px;
 }
 .footer .grid{
     grid-template-columns: 2fr 1fr;
 }
+#projects .img-fluid{
+    padding: 2px;
+}
 /*Optimize for mobile view*/
-
+@media(max-width:400px){
+  #projects .spacing1{
+    margin-bottom: 42px;
+  }
+}
 @media(max-width:500px){
     #heads .slant{
         width: auto;
@@ -139,20 +151,26 @@
     }
     #header1{
         text-align: center;
+        font-size: xx-large;
     }
     .header2{
         text-align: center;
+        font-size: xx-large;
     }
 
     #projects .card{
-        max-height: 550px;
+        max-height: 600px;
         height: auto;
         margin-bottom: 10px;
         background-color: #ffedd8;
     }
+    #projects .container{
+      margin-bottom: 5px;
+    }
     #projects .btn{
         margin-bottom: 5px;
-        width: 170px;
+        width: 200px;
+        max-width: 150px;
     }
     .grid1{
         display: grid;
@@ -163,33 +181,105 @@
     #contact{
         margin-top: 100px;
     }
+    body #loader {
+        clear: both;
+        margin: -55px 0 0 -55px;
+    }
+    #foot h4{
+        margin-left: 35px;
+    }
+    .spacing1{
+      margin-bottom: 66px;
+    }
+    .spacing2{
+      margin-bottom: 44px;
+    }
 }
-
 /*Animations*/
 #loader {
+    color: #f77f00;
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
     position: absolute;
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #ffd166;
+    margin: -60px 0 0 -60px;
+    width: 1em;
+    height: 1em;
     border-radius: 50%;
-    border-top: 16px solid #e36414;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 2.1s infinite ease, round 2.1s infinite ease;
+    animation: load6 2.1s infinite ease, round 2.1s infinite ease;
+  }
+  @-webkit-keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @-webkit-keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
   
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
