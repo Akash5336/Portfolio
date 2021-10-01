@@ -139,6 +139,9 @@
   }
 }
 @media(max-width:500px){
+    .display-2{
+      text-align: center;
+    }
     #heads .slant{
         width: auto;
     }
@@ -159,6 +162,7 @@
     }
 
     #projects .card{
+        margin-top: 2px;
         max-height: 600px;
         height: auto;
         margin-bottom: 10px;
@@ -179,7 +183,7 @@
         margin-top: 100px;
     }
     #contact{
-        margin-top: 100px;
+        margin-top: 50px;
     }
     body #loader {
         clear: both;
